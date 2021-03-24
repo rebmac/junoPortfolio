@@ -3,7 +3,7 @@
 @import './fontsAndColors';
 @import './mixins';
 
-* {border:1px solid rgb(230, 120, 138);}
+// * {border:1px solid rgb(230, 120, 138);}
 
 body {
     background-color: $backgroundWhite;
@@ -19,7 +19,7 @@ body {
     transition: all .2s ease-in-out; 
     }
     
-    .grow:hover { 
+.grow:hover { 
     transform: scale(1.1); 
     }
 
@@ -91,37 +91,48 @@ header h2{
 .aboutMeContent{
     @include flexRow;
 }
+
 .aboutMeText,
 .skillCard{
     width: 50%;
 }
 
 .skillCard{
+    background-image: url(skillCard.png);
+    background-size: 450px 275px;
+    background-repeat: no-repeat;
     display: flex;
     flex-direction: column;
     align-items: center;
-    z-index: -10;
+    height: 400px;
+    margin-top: 40px;
+    position: relative;
 }
 
-.skillCard
-img{
-    width: 450px;
-    margin-top: 40px;
+.skillCard h3{
+    color: $brightBlue;
 }
+
 .faIcons{
     display: flex;
     flex-wrap: wrap;
     width: 400px;
     position: absolute;
     margin-top: 83px;
+    margin-right: 45px;
 }
 
-i {
+div i {
     font-size: 3.1rem;
-    color: $brightBlue;
-    padding: 5px;
+    background-image: linear-gradient(45deg, $silBlue, $brightBlue);
+    background-clip: text;  -webkit-background-clip: text;  -moz-background-clip: text;  -moz-text-fill-color: transparent;  -webkit-text-fill-color: transparent;
+    padding: 8px;
     margin: 9px;
-    
+    transition: all 0.5s;
+        &:hover,
+        &:focus-within{
+        transform: scale(1.1);
+        }
 }
 
 .aboutMeText{
@@ -130,6 +141,13 @@ i {
 
 .aboutMeText h3{
     color: $deepBlue;
+}
+
+.mySkillsText{
+    color: $deepBlue;
+    font-size: 1.4rem;
+    margin-right: 56px;
+    padding: 18px;
 }
 
 
