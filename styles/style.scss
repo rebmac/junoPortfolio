@@ -11,10 +11,17 @@ body {
 }
 
 .wrapper{
-    width: 90%;
+    max-width: 1000px;
     margin: 0 auto;
     z-index: 5;
 }
+.grow { 
+    transition: all .2s ease-in-out; 
+    }
+    
+    .grow:hover { 
+    transform: scale(1.1); 
+    }
 
 //HEADER START
 
@@ -71,10 +78,76 @@ header h2{
     margin-top: -55px;
 }
 
+.headerZigZag{
+    display: flex;
+    justify-content: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+}
+
 //HEADER END
 
 //ABOUT ME SECTION START
+.aboutMeContent{
+    @include flexRow;
+}
+.aboutMeText,
+.skillCard{
+    width: 50%;
+}
+
+.skillCard{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    z-index: -10;
+}
+
+.skillCard
+img{
+    width: 450px;
+    margin-top: 40px;
+}
+.faIcons{
+    display: flex;
+    flex-wrap: wrap;
+    width: 400px;
+    position: absolute;
+    margin-top: 83px;
+}
+
+i {
+    font-size: 3.1rem;
+    color: $brightBlue;
+    padding: 5px;
+    margin: 9px;
+    
+}
+
+.aboutMeText{
+    padding: 5px;
+}
+
+.aboutMeText h3{
+    color: $deepBlue;
+}
+
+
+p{
+    font-family: $poppinsFont;
+    color: $darkGrey;
+    font-size: 1rem;
+    line-height: 1.5rem;
+}
 .rightBlob{
+    z-index: -10;
+    display: flex;
+    justify-content: end;
+    margin-top: -900px;
+}
+
+.rightBlob img{
+    width: 500px;
     z-index: -10;
 }
 
