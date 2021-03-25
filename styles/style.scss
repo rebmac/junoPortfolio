@@ -45,7 +45,7 @@ body {
 
 h1{
     font-size: 4rem;
-    background-image: linear-gradient(45deg, $deepBlue, $brightBlue);
+    background-image: linear-gradient(45deg, $deepBlue, $middleBlue);
     background-clip: text;  -webkit-background-clip: text;  -moz-background-clip: text;  -moz-text-fill-color: transparent;  -webkit-text-fill-color: transparent;
 }
 
@@ -88,6 +88,10 @@ header h2{
 //HEADER END
 
 //ABOUT ME SECTION START
+.aboutMeSection{
+    margin-bottom: 40px;
+}
+
 .aboutMeContent{
     @include flexRow;
 }
@@ -175,3 +179,15 @@ p{
 }
 
 //ABOUT ME SECTION END
+
+//PORTFOLIO SECTION START
+.portfolioSection{
+    margin-top: 40px;
+}
+
+.vl{
+    border-left: 4px dotted $silBlue;
+    height: 500px;
+}
+
+//PORTFOLIO SECTION END

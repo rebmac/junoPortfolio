@@ -283,7 +283,7 @@ body {
 
 h1 {
   font-size: 4rem;
-  background-image: linear-gradient(45deg, #416092, #64a9d7);
+  background-image: linear-gradient(45deg, #416092, #77abdc);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -332,6 +332,10 @@ header h2 {
   padding-bottom: 40px;
 }
 
+.aboutMeSection {
+  margin-bottom: 40px;
+}
+
 .aboutMeContent {
   display: -webkit-box;
   display: -ms-flexbox;
@@ -367,7 +371,7 @@ header h2 {
 }
 
 .skillCard h3 {
-  color: #64a9d7;
+  color: #2074AC;
 }
 
 .faIcons {
@@ -384,7 +388,7 @@ header h2 {
 
 div i {
   font-size: 3.1rem;
-  background-image: linear-gradient(45deg, #a0b6da, #64a9d7);
+  background-image: linear-gradient(45deg, #a0b6da, #2074AC);
   background-clip: text;
   -webkit-background-clip: text;
   -moz-background-clip: text;
@@ -410,7 +414,7 @@ div i:hover, div i:focus-within {
 }
 
 .aboutMeText span {
-  color: #64a9d7;
+  color: #2074AC;
 }
 
 .mySkillsText {
@@ -441,5 +445,14 @@ p {
 .rightBlob img {
   width: 500px;
   z-index: -10;
+}
+
+.portfolioSection {
+  margin-top: 40px;
+}
+
+.vl {
+  border-left: 4px dotted #a0b6da;
+  height: 500px;
 }
 /*# sourceMappingURL=style.css.map */
