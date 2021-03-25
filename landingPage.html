@@ -100,14 +100,43 @@
                 </div>
             </div>
     </section>
-    <section class="contactSection wrapper">
+    <footer class="wrapper">
         <div class="zigZag">
             <img src="./assets/zigZag.png" alt="small zig zag line" aria-hidden="true">
         </div>
-
         <h3>Let's Connect!</h3>
-        <p>If you ever want to sit down over tea (virtually) or just want a quick chat - you can find me on social media or you can send me a message here! </p>
-    </section>
+        <div class="contactFlex">
+            <div class="socialLinksText">
+                <p>If you ever want to sit down over tea (virtually) or just want a quick chat - you can find me on
+                    social media or you can send me a message here.</p> <p>Also don't forget the book recommendations! </p>
+                <div class="email">
+                    <p><a href = "mailto: rebecca.alex.maie@gmail.com">rebecca.alex.maie@gmail.com</a></p>
+                </div>
+                <div class="socialLinks">
+                    <div><i class="fab fa-github fa-fw" aria-label="Link to Github"></i></div>
+                    <div><i class="fab fa-linkedin fa-fw" aria-label="Link to LinkedIn"></i></div>
+                    <div><i class="fab fa-twitter fa-fw" aria-label="Link to Twitter"></i></div>
+                </div>
+            </div>
+       
+
+        <form name="contact" method="POST" data-netlify="true">
+            <p>
+                <label>Your Name: <input type="text" name="name" /></label>
+            </p>
+            <p>
+                <label>Your Email: <input type="email" name="email" /></label>
+            </p>
+            <p>
+                <label>Message: <textarea name="message"></textarea></label>
+            </p>
+            <p>
+                <button type="submit">Send</button>
+            </p>
+        </form>
+    </div>
+
+    </footer>
 </body>
 
 </html>

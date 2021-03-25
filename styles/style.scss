@@ -231,6 +231,44 @@ p{
 
 //FOOTER START
 
+footer h3{
+    color: $deepBlue;
+    text-align: center;
+}
+
+.contactFlex{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    margin-top: 40px;
+}
+
+.socialLinksText{
+    width: 45%;
+    padding: 30px;
+
+}
+
+.email{
+    display: flex;
+    justify-content: center;
+}
+
+.email a{
+    text-decoration: none;
+    color: $brightBlue;
+    font-size: 1.1rem;
+}
+
+.socialLinks{
+    display: flex;
+    justify-content: space-around;
+}
+
+form {
+    width: 45%;
+}
+
 
 
 //FOOTER END
