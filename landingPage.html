@@ -107,7 +107,7 @@
         <h3>Let's Connect!</h3>
         <div class="contactFlex">
             <div class="socialLinksText">
-                <p>If you ever want to sit down over tea (virtually) or just want a quick chat - you can find me on
+                <p>If you ever want to sit down over tea or just want a quick chat - you can find me on
                     social media or you can send me a message here.</p> <p>Also don't forget the book recommendations! </p>
                 <div class="email">
                     <p><a href = "mailto: rebecca.alex.maie@gmail.com">rebecca.alex.maie@gmail.com</a></p>
@@ -121,17 +121,21 @@
        
 
         <form name="contact" method="POST" data-netlify="true">
+            <div class="nameAndEmail">
             <p>
-                <label>Your Name: <input type="text" name="name" /></label>
+                <label aria-label="Your Name Input"><input type="text" placeholder="name" name="name" class="nameInput" /></label>
             </p>
             <p>
-                <label>Your Email: <input type="email" name="email" /></label>
+                <label aria-label="Your Email Input"><input type="email" placeholder="email"
+                    name="email" class="emailInput" /></label>
+            </p>
+        </div>
+
+            <p>
+                <label aria-label="Your Message Input"><textarea placeholder="message" name="message" rows="4"></textarea></label>
             </p>
             <p>
-                <label>Message: <textarea name="message"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send</button>
+                <button type="submit">Send Message</button>
             </p>
         </form>
     </div>

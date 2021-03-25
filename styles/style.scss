@@ -3,7 +3,7 @@
 @import './fontsAndColors';
 @import './mixins';
 
-* {border:1px solid rgb(230, 120, 138);}
+// * {border:1px solid rgb(230, 120, 138);}
 
 body {
     background-color: $backgroundWhite;
@@ -125,11 +125,11 @@ div i {
     background-clip: text;  -webkit-background-clip: text;  -moz-background-clip: text;  -moz-text-fill-color: transparent;  -webkit-text-fill-color: transparent;
     padding: 8px;
     margin: 9px;
-    transition: all 0.5s;
-        &:hover,
-        &:focus-within{
-        transform: scale(1.1);
-        }
+    // transition: all 0.5s;
+    //     &:hover,
+    //     &:focus-within{
+    //     transform: scale(1.1);
+    //     }
 }
 
 .aboutMeText{
@@ -230,6 +230,9 @@ p{
 
 
 //FOOTER START
+footer {
+    padding-bottom: 60px;
+}
 
 footer h3{
     color: $deepBlue;
@@ -244,14 +247,8 @@ footer h3{
 }
 
 .socialLinksText{
-    width: 45%;
+    width: 40%;
     padding: 30px;
-
-}
-
-.email{
-    display: flex;
-    justify-content: center;
 }
 
 .email a{
@@ -262,13 +259,60 @@ footer h3{
 
 .socialLinks{
     display: flex;
-    justify-content: space-around;
+}
+
+.socialLinks i {
+    transition: all 0.5s;
+    &:hover,
+    &:focus-within{
+    transform: scale(1.1);
+    }
 }
 
 form {
-    width: 45%;
+    width: 60%;
+    padding: 30px;
 }
 
+input, textarea{
+    width: 100%;
+    font-size: 1rem;
+    line-height: 1.5rem;
+    background-color: transparent;
+    font-family: $poppinsFont;
+    border: none;
+    border-bottom: 1px solid $darkGrey;
+}
+
+.nameAndEmail{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nameInput{
+    width: 95%;
+}
+
+button{
+    font-size: 1rem;
+    line-height: 1.5rem;
+    width: auto;
+    font-family: $poppinsFont;
+    color: $backgroundWhite;
+    text-transform: uppercase;
+    border-radius: 5px;
+    text-decoration: none;
+    padding: 10px 15px;
+    background-color: $deepBlue;
+    border: $deepBlue;
+    margin: 10px 0;
+
+    transition: all 0.5s;
+        &:hover,
+        &:focus-within{
+        transform: scale(1.05);
+        }
+}
 
 
 //FOOTER END
