@@ -640,4 +640,211 @@ button:hover, button:focus-within {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
 }
+
+@media (max-width: 1050px) {
+  .wrapper {
+    width: 900px;
+  }
+  .skillCard {
+    background-size: 410px 300px;
+  }
+  .mySkillsText {
+    margin-right: 33px;
+  }
+  .faIcons {
+    width: 340px;
+    margin-right: 17px;
+  }
+  .projectCard {
+    width: 400px;
+  }
+  .showInfo {
+    width: 350px;
+  }
+  .rightInfo {
+    margin-left: -477px;
+  }
+  .portfolioSection h3 {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+@media (max-width: 940px) {
+  .wrapper {
+    width: 750px;
+  }
+  h1 {
+    font-size: 3.5rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 1.2rem;
+  }
+  .vl {
+    height: 700px;
+  }
+  .skillCard {
+    background-size: 350px 300px;
+  }
+  .mySkillsText {
+    margin-right: 33px;
+  }
+  .faIcons {
+    width: 340px;
+    margin-right: 17px;
+  }
+  .portfolioSection h3 {
+    padding-top: 8px;
+    padding-bottom: 20px;
+  }
+  .projectCard {
+    width: 350px;
+  }
+  .leftInfo {
+    margin-left: 377px;
+  }
+  .rightInfo {
+    margin-left: -374px;
+  }
+  .showInfo {
+    margin-top: -252px;
+  }
+  .showInfo h3 {
+    padding: 0;
+  }
+}
+
+@media (max-width: 750px) {
+  .wrapper {
+    width: 700px;
+  }
+  h1 {
+    font-size: 3rem;
+  }
+  header h2 {
+    font-size: 2.4rem;
+  }
+  .heroImg img {
+    width: 119%;
+    margin-top: -28px;
+    margin-left: -30px;
+  }
+  .rightBlob {
+    display: none;
+  }
+  .aboutMeContent {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+  .skillCard {
+    width: 60%;
+    background-size: 100% 300px;
+    margin-top: 0;
+    height: 320px;
+  }
+  .aboutMeText {
+    width: 80%;
+  }
+  p {
+    font-size: .8rem;
+  }
+  .portfolioSection {
+    margin-top: 30px;
+  }
+  .showInfo {
+    margin-top: -222px;
+    width: 300px;
+  }
+  .projectCard {
+    width: 310px;
+  }
+}
+
+@media (max-width: 360px) {
+  .wrapper {
+    width: 95%;
+  }
+  .headerText {
+    padding: 0;
+    width: 100%;
+    padding-left: 5px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  header h2 {
+    font-size: 1.8rem;
+    margin-bottom: -27px;
+  }
+  .heroImg img {
+    width: 155%;
+    margin-top: -56px;
+    margin-left: -53px;
+  }
+  .zigZag {
+    padding-top: 20px;
+  }
+  .skillCard {
+    background-image: none;
+  }
+  .mySkillsText {
+    margin: 0 auto;
+  }
+  .faIcons {
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 0;
+  }
+  .aboutMeText {
+    width: 100%;
+  }
+  .vl {
+    display: none;
+  }
+  .showInfo {
+    display: none;
+  }
+  .projectCard img {
+    margin-bottom: 40px;
+  }
+  .contactFlex {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .socialLinksText {
+    width: 100%;
+  }
+  .socialLinks {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  form {
+    width: 100%;
+  }
+  .nameAndEmail {
+    -webkit-box-orient: vertical;
+    -webkit-box-direction: normal;
+        -ms-flex-direction: column;
+            flex-direction: column;
+  }
+  .buttonClass {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
 /*# sourceMappingURL=style.css.map */
