@@ -11,7 +11,7 @@
         href="https://fonts.googleapis.com/css2?family=Old+Standard+TT&family=Playfair+Display&family=Poppins&display=swap"
         rel="stylesheet">
     <script src="https://kit.fontawesome.com/853a2b2ac6.js" crossorigin="anonymous"></script>
-    <script src="/index.js"></script> 
+    <script src="/index.js"></script>
 </head>
 
 <body>
@@ -83,17 +83,27 @@
             <div class="leftProjects">
                 <div class="project1 projectCard">
                     <a href="https://hiker-trail-log.netlify.app/" target="_blank">
-                    <img src="./assets/hikerTrailSite.jpg" alt="Preview of Hiker Trail Log Site">
-                </a>
+                        <img src="./assets/hikerTrailSite.jpg" alt="Preview of Hiker Trail Log Site">
+                    </a>
+                    <div class="showInfo leftInfo">
+                        <h3>Hiker Trail Log</h3>
+                        <p>An app that records user’s hiking information such as date and distance and then stores that information in <span> Firebase</span>. Displays information on the page and allows users to delete entries in the database.
+                        </p>
+
+                    </div>
                 </div>
+                
 
                 <div class="project3 projectCard">
                     <a href="https://haikushighway.netlify.app/" target="_blank">
-                    <img src="./assets/haikusHighwaySite.jpg" alt="Preview of Haikus Highway Site">
-                </a>
+                        <img src="./assets/haikusHighwaySite.jpg" alt="Preview of Haikus Highway Site">
+                    </a>
+                    <div class="showInfo leftInfo">
+                        <h3>Haikus Highway</h3>
+                        <p>Working in a <span> team of four</span>, we organized and implemented a provided client project outline. Keeping to style guidelines and using <span> React </span>and an <span> API</span> to generate suggested words to form Haikus. Following the syllable conventions of that poem style.</p>
+                    </div>
                 </div>
             </div>
-
 
             <div class="vl"></div>
 
@@ -102,6 +112,10 @@
                     <a href="https://emily-rebecca.github.io/raise-the-Bar/" target="_blank">
                         <img src="./assets/raiseTheBarSite.jpg" alt="Preview of Raise The Bar Site">
                     </a>
+                    <div class="showInfo rightInfo">
+                        <h3>Raise The Bar</h3>
+                        <p>Utilizing an <span> API</span>, this <span>pair programming </span>project was made to display breweries based on selected states in the USA available in a dropdown menu. Randomized brewery related puns appear on page reload. </p>
+                    </div>
                 </div>
             </div>
     </section>
@@ -112,40 +126,46 @@
         <h3>Let's Connect!</h3>
         <div class="contactFlex">
             <div class="socialLinksText">
-                <p>If you ever want to sit down over tea or just want a quick  - you can find me on
-                    social media or you can send me a message here.</p> <p>Also don't forget the book recommendations! </p>
+                <p>If you ever want to sit down over tea or just want a quick - you can find me on
+                    social media or you can send me a message here.</p>
+                <p>Also don't forget the book recommendations! </p>
                 <div class="email">
-                    <p><a href = "mailto: rebecca.alex.maie@gmail.com">rebecca.alex.maie@gmail.com</a></p>
+                    <p><a href="mailto: rebecca.alex.maie@gmail.com">rebecca.alex.maie@gmail.com</a></p>
                 </div>
                 <div class="socialLinks">
-                    <div><a href="https://github.com/rebmac" target=”_blank”><i class="fab fa-github fa-fw" aria-label="Link to Github"></i></a></div>
+                    <div><a href="https://github.com/rebmac" target=”_blank”><i class="fab fa-github fa-fw"
+                                aria-label="Link to Github"></i></a></div>
 
-                    <div><a href="https://www.linkedin.com/in/rebecca-macdonald-0637ab14a/" target="_blank"><i class="fab fa-linkedin fa-fw" aria-label="Link to LinkedIn"></i></a></div>
+                    <div><a href="https://www.linkedin.com/in/rebecca-macdonald-0637ab14a/" target="_blank"><i
+                                class="fab fa-linkedin fa-fw" aria-label="Link to LinkedIn"></i></a></div>
 
-                    <div><a href="https://twitter.com/frontend_rebdev" target="_blank"><i class="fab fa-twitter fa-fw" aria-label="Link to Twitter"></i></a></div>
+                    <div><a href="https://twitter.com/frontend_rebdev" target="_blank"><i class="fab fa-twitter fa-fw"
+                                aria-label="Link to Twitter"></i></a></div>
                 </div>
             </div>
-       
 
-        <form name="contact" method="POST" data-netlify="true">
-            <div class="nameAndEmail">
-            <p>
-                <label aria-label="Your Name Input"><input type="text" placeholder="name" name="name" class="nameInput" /></label>
-            </p>
-            <p>
-                <label aria-label="Your Email Input"><input type="email" placeholder="email"
-                    name="email" class="emailInput" /></label>
-            </p>
+
+            <form name="contact" method="POST" data-netlify="true">
+                <div class="nameAndEmail">
+                    <p>
+                        <label aria-label="Your Name Input"><input type="text" placeholder="name" name="name"
+                                class="nameInput" /></label>
+                    </p>
+                    <p>
+                        <label aria-label="Your Email Input"><input type="email" placeholder="email" name="email"
+                                class="emailInput" /></label>
+                    </p>
+                </div>
+
+                <p>
+                    <label aria-label="Your Message Input"><textarea placeholder="message" name="message"
+                            rows="5"></textarea></label>
+                </p>
+                <p>
+                    <button type="submit">Send Message</button>
+                </p>
+            </form>
         </div>
-
-            <p>
-                <label aria-label="Your Message Input"><textarea placeholder="message" name="message" rows="4"></textarea></label>
-            </p>
-            <p>
-                <button type="submit">Send Message</button>
-            </p>
-        </form>
-    </div>
 
     </footer>
 </body>

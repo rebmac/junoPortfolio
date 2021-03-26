@@ -459,6 +459,8 @@ p {
   width: 450px;
   position: relative;
   padding: none;
+  -webkit-transition: all 0.5s;
+  transition: all 0.5s;
 }
 
 .projectCard img {
@@ -466,11 +468,46 @@ p {
   border-radius: 25px;
   -webkit-transition: all 0.5s;
   transition: all 0.5s;
+  position: relative;
 }
 
 .projectCard img:hover, .projectCard img:focus-within {
   -webkit-transform: scale(1.05);
           transform: scale(1.05);
+}
+
+.showInfo {
+  visibility: hidden;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
+  padding: 5px;
+  position: absolute;
+  margin-top: -264px;
+  width: 450px;
+}
+
+.showInfo h3 {
+  padding: 0;
+  text-align: left;
+}
+
+.showInfo span {
+  color: #2074AC;
+}
+
+.rightInfo {
+  margin-left: -530px;
+}
+
+.leftInfo {
+  margin-left: 530px;
+}
+
+.projectCard:hover .showInfo,
+.projectCard:focus-within .showInfo {
+  visibility: visible;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 .leftProjects {
@@ -545,8 +582,8 @@ footer h3 {
 }
 
 .socialLinks i {
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 .socialLinks i:hover, .socialLinks i:focus-within {
@@ -594,9 +631,9 @@ button {
   padding: 10px 15px;
   background-color: #416092;
   border: #416092;
-  margin: 10px 0;
-  -webkit-transition: all 0.5s;
-  transition: all 0.5s;
+  margin: 25px 0;
+  -webkit-transition: ease-in-out .5s;
+  transition: ease-in-out .5s;
 }
 
 button:hover, button:focus-within {

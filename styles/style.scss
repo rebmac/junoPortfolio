@@ -125,11 +125,6 @@ div i {
     background-clip: text;  -webkit-background-clip: text;  -moz-background-clip: text;  -moz-text-fill-color: transparent;  -webkit-text-fill-color: transparent;
     padding: 8px;
     margin: 9px;
-    // transition: all 0.5s;
-    //     &:hover,
-    //     &:focus-within{
-    //     transform: scale(1.1);
-    //     }
 }
 
 .aboutMeText{
@@ -199,6 +194,7 @@ p{
     width: 450px;
     position: relative;
     padding: none;
+    transition: all 0.5s;
 }
 
 .projectCard img{
@@ -209,7 +205,43 @@ p{
         &:focus-within{
         transform: scale(1.05);
         }
+    position: relative;
 }
+
+.showInfo{
+    // display: none;
+    visibility: hidden;
+    transition: ease-in-out .5s;
+    padding: 5px;
+    position: absolute;
+    margin-top: -264px;
+    width: 450px;
+}
+
+.showInfo h3{
+    padding: 0;
+    text-align: left;
+}
+
+.showInfo span{
+    color: $brightBlue;
+}
+
+.rightInfo{
+    margin-left: -530px;
+}
+
+.leftInfo{
+    margin-left: 530px;
+}
+
+.projectCard:hover .showInfo,
+.projectCard:focus-within .showInfo{
+        visibility: visible;
+        transition: ease-in-out .5s;
+}
+
+
 
 
 
@@ -265,7 +297,7 @@ footer h3{
 }
 
 .socialLinks i {
-    transition: all 0.5s;
+    transition: ease-in-out .5s;
     &:hover,
     &:focus-within{
     transform: scale(1.1);
@@ -308,14 +340,22 @@ button{
     padding: 10px 15px;
     background-color: $deepBlue;
     border: $deepBlue;
-    margin: 10px 0;
+    margin: 25px 0;
 
-    transition: all 0.5s;
+    transition: ease-in-out .5s;
         &:hover,
         &:focus-within{
         transform: scale(1.05);
         }
 }
 
-
 //FOOTER END
+
+//MEDIA QUERIES START***************************************************
+
+//HEADER MEDIA QUERIES START
+
+//HEADER MEDIA QUERIES END
+
+
+//MEDIA QUERIES END
