@@ -157,8 +157,7 @@ p{
 .rightBlob{
     z-index: -10;
     display: flex;
-    justify-content: end;
-    margin-top: -900px;
+    justify-content: flex-end;
 }
 
 .rightBlob img{
