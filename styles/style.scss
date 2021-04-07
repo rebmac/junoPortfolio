@@ -382,7 +382,7 @@ button{
     }
 
 }
-@media (max-width: 940px ){
+@media (max-width: 940px){
     .wrapper{
         width: 750px;
     }
@@ -434,8 +434,9 @@ button{
 
 @media(max-width: 750px){
     .wrapper{
-        width: 700px;
+        width: 90%;
     }
+
     h1{
         font-size: 3rem;
     }
@@ -443,21 +444,24 @@ button{
     header h2{
         font-size: 2.4rem;
     }
+
     .heroImg img {
         width: 119%;
         margin-top: -28px;
-        margin-left: -30px;
+        margin-left: -45px;
     }
+
     .rightBlob{
         display: none;
     }
+
     .aboutMeContent{
         flex-direction: column;
         align-items: center;
     }
     .skillCard{
         width: 60%;
-        background-size: 100% 300px;
+        background-image: none;
         margin-top: 0;
         height: 320px;
     }
@@ -471,16 +475,64 @@ button{
         margin-top: 30px;
     }
     .showInfo {
-        margin-top: -222px;
+        margin-top: 0;
         width: 300px;
+        position: static;
+        visibility: visible;
+        padding: 0;
+        margin-bottom: 30px;
+    }
+    .projectFlex{
+        justify-content: center;
+    }
+
+    .leftInfo{
+        margin-top: 0;
+        margin-left: 0;
+    }
+
+    .rightInfo{
+        margin-left: 0;
+    }
+
+    .vl{
+        display: none;
+        height: 0;
     }
 
     .projectCard {
         width: 310px;
     }
+    .projectCard img{
+        margin-bottom: 0;
+    }
+
+    .contactFlex{
+        flex-direction: column;
+    }
+    .socialLinksText{
+        width: 100%;
+    }
+    .socialLinks{
+        justify-content: center;
+    }
+
+    form{
+        width: 100%;
+    }
+    .nameAndEmail{
+        flex-direction: column;
+    }
+    .nameInput{
+        width: 100%;
+    }
+    .buttonClass{
+        display: flex;
+        justify-content: center;
+    }
 }
 
-@media (max-width: 360px){
+@media (max-width: 460px){
     .wrapper{
         width: 95%;
     }
@@ -500,15 +552,13 @@ button{
     .heroImg img {
         width: 155%;
         margin-top: -56px;
-        margin-left: -53px;
+        margin-left: -66px;
     }
     .zigZag{
         padding-top: 20px;
     }
 
-    .skillCard{
-        background-image: none;
-    }
+
     .mySkillsText{
         margin: 0 auto;
     }
@@ -520,37 +570,19 @@ button{
     .aboutMeText{
         width:100%;
     }
-    .vl{
-        display: none;
-    }
-    .showInfo{
-        display: none;
-    }
 
-    .projectCard img{
-        margin-bottom: 40px;
-    }
-
-    .contactFlex{
-        flex-direction: column;
-    }
-    .socialLinksText{
-        width: 100%;
-    }
-    .socialLinks{
+    // .showInfo{
+    //     display: none;
+    // }
+    .projectFlex{
         justify-content: center;
     }
 
-    form{
-        width: 100%;
+    footer{
+        padding: 30px;
     }
-    .nameAndEmail{
-        flex-direction: column;
-    }
-    .buttonClass{
-        display: flex;
-        justify-content: center;
-    }
+    
+
 
 }
 
