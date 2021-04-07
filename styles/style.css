@@ -719,7 +719,7 @@ button:hover, button:focus-within {
 
 @media (max-width: 750px) {
   .wrapper {
-    width: 700px;
+    width: 90%;
   }
   h1 {
     font-size: 3rem;
@@ -730,7 +730,7 @@ button:hover, button:focus-within {
   .heroImg img {
     width: 119%;
     margin-top: -28px;
-    margin-left: -30px;
+    margin-left: -45px;
   }
   .rightBlob {
     display: none;
@@ -746,7 +746,7 @@ button:hover, button:focus-within {
   }
   .skillCard {
     width: 60%;
-    background-size: 100% 300px;
+    background-image: none;
     margin-top: 0;
     height: 320px;
   }
@@ -760,60 +760,34 @@ button:hover, button:focus-within {
     margin-top: 30px;
   }
   .showInfo {
-    margin-top: -222px;
+    margin-top: 0;
     width: 300px;
+    position: static;
+    visibility: visible;
+    padding: 0;
+    margin-bottom: 30px;
+  }
+  .projectFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  .leftInfo {
+    margin-top: 0;
+    margin-left: 0;
+  }
+  .rightInfo {
+    margin-left: 0;
+  }
+  .vl {
+    display: none;
+    height: 0;
   }
   .projectCard {
     width: 310px;
   }
-}
-
-@media (max-width: 360px) {
-  .wrapper {
-    width: 95%;
-  }
-  .headerText {
-    padding: 0;
-    width: 100%;
-    padding-left: 5px;
-  }
-  h1 {
-    font-size: 2.2rem;
-  }
-  header h2 {
-    font-size: 1.8rem;
-    margin-bottom: -27px;
-  }
-  .heroImg img {
-    width: 155%;
-    margin-top: -56px;
-    margin-left: -53px;
-  }
-  .zigZag {
-    padding-top: 20px;
-  }
-  .skillCard {
-    background-image: none;
-  }
-  .mySkillsText {
-    margin: 0 auto;
-  }
-  .faIcons {
-    margin: 0 auto;
-    padding-top: 84px;
-    padding-bottom: 0;
-  }
-  .aboutMeText {
-    width: 100%;
-  }
-  .vl {
-    display: none;
-  }
-  .showInfo {
-    display: none;
-  }
   .projectCard img {
-    margin-bottom: 40px;
+    margin-bottom: 0;
   }
   .contactFlex {
     -webkit-box-orient: vertical;
@@ -838,6 +812,9 @@ button:hover, button:focus-within {
         -ms-flex-direction: column;
             flex-direction: column;
   }
+  .nameInput {
+    width: 100%;
+  }
   .buttonClass {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -845,6 +822,51 @@ button:hover, button:focus-within {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
+  }
+}
+
+@media (max-width: 460px) {
+  .wrapper {
+    width: 95%;
+  }
+  .headerText {
+    padding: 0;
+    width: 100%;
+    padding-left: 5px;
+  }
+  h1 {
+    font-size: 2.2rem;
+  }
+  header h2 {
+    font-size: 1.8rem;
+    margin-bottom: -27px;
+  }
+  .heroImg img {
+    width: 155%;
+    margin-top: -56px;
+    margin-left: -66px;
+  }
+  .zigZag {
+    padding-top: 20px;
+  }
+  .mySkillsText {
+    margin: 0 auto;
+  }
+  .faIcons {
+    margin: 0 auto;
+    padding-top: 84px;
+    padding-bottom: 0;
+  }
+  .aboutMeText {
+    width: 100%;
+  }
+  .projectFlex {
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+  footer {
+    padding: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
