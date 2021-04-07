@@ -511,8 +511,11 @@ button{
         flex-direction: column;
     }
     .socialLinksText{
-        width: 100%;
+        width: 80%;
+        margin: 0 auto;
+        padding:0;
     }
+    
     .socialLinks{
         justify-content: center;
     }
@@ -577,6 +580,7 @@ button{
     .projectFlex{
         justify-content: center;
     }
+
 
     footer{
         padding: 30px;
