@@ -533,6 +533,9 @@ button{
         display: flex;
         justify-content: center;
     }
+    footer{
+        padding: 0;
+    }
 }
 
 @media (max-width: 460px){
@@ -580,14 +583,7 @@ button{
     .projectFlex{
         justify-content: center;
     }
-
-
-    footer{
-        padding: 30px;
-    }
     
-
-
 }
 
 
