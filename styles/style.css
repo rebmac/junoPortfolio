@@ -825,6 +825,9 @@ button:hover, button:focus-within {
         -ms-flex-pack: center;
             justify-content: center;
   }
+  footer {
+    padding: 0;
+  }
 }
 
 @media (max-width: 460px) {
@@ -866,9 +869,6 @@ button:hover, button:focus-within {
     -webkit-box-pack: center;
         -ms-flex-pack: center;
             justify-content: center;
-  }
-  footer {
-    padding: 30px;
   }
 }
 /*# sourceMappingURL=style.css.map */
